@@ -37,6 +37,7 @@ export type RoutePath =
   | `/199it/:category{.+}?`
   | `/19lou/:city?`
   | `/1lou/:params{.+}?`
+  | `/1lou/search/:params`
   | `/1point3acres/blog/:category?`
   | `/1point3acres/category/:id?/:type?/:order?`
   | `/1point3acres/offer/:year?/:major?/:school?`
@@ -103,6 +104,7 @@ export type RoutePath =
   | `/95mm/category/:category`
   | `/95mm/tab/:tab?`
   | `/95mm/tag/:tag`
+  | `/98zhibo/zuqiujijin`
   | `/99percentinvisible/transcript`
   | `/9to5/:subsite/:tag?`
   | `/a9vg/:category{.+}?`
@@ -501,6 +503,8 @@ export type RoutePath =
   | `/caixinglobal/latest`
   | `/camchina/:id?`
   | `/canada.ca/news/:lang/:department?`
+  | `/canalmuseum/consulting/:type`
+  | `/canalmuseum/lszl`
   | `/cankaoxiaoxi/:id?`
   | `/cankaoxiaoxi/column/:id?`
   | `/capitalmind/insights`
@@ -1730,6 +1734,7 @@ export type RoutePath =
   | `/ichunqiu/`
   | `/iciba/:days?/:img_type?`
   | `/icity/:id`
+  | `/icity/imuseum/:city/:type?`
   | `/icourse163/newest`
   | `/idaily/:language?`
   | `/idolmaster/news/:routeParams?`
@@ -1799,6 +1804,7 @@ export type RoutePath =
   | `/iqiyi/album/:id`
   | `/iqiyi/user/video/:uid`
   | `/iqnew/latest`
+  | `/iracing/news`
   | `/iresearch/report/:type?/:id?`
   | `/iresearch/weekly/:id?`
   | `/isct/news/:lang`
@@ -2139,6 +2145,7 @@ export type RoutePath =
   | `/makerworld/trending`
   | `/makerworld/user/:handle/upload`
   | `/malaysiakini/:lang/:category?`
+  | `/maldita/updates/:category?`
   | `/mamibuy/:caty?`
   | `/mangadex/manga/:id/:lang?`
   | `/mangadex/mdlist/:id/:lang?`
@@ -2219,6 +2226,7 @@ export type RoutePath =
   | `/minecraft/java-runtime/:arch?/:javaType?`
   | `/minecraft/version/:versionType?/:linkType?`
   | `/mingpao/:type?/:category?`
+  | `/minhangmuseum/interim`
   | `/miniflux/entry/:feeds/:parameters?`
   | `/miniflux/subscription/:parameters?`
   | `/mirror/:id`
@@ -2290,6 +2298,7 @@ export type RoutePath =
   | `/mymusicsheet/user/sheets/:username/:iso?/:freeOnly?`
   | `/mysql/release/:version?`
   | `/naceweb/blog/:sort?`
+  | `/namoc/zhanlan`
   | `/nanhua/report/:type1/:type2`
   | `/nankai/ai/:type?`
   | `/nankai/cc/:type?`
