@@ -875,6 +875,7 @@ export type RoutePath =
   | `/deepl/blog/:lang?`
   | `/deeplearning/the-batch/:tag{.+}?`
   | `/deepmind/blog`
+  | `/deepseek/changelog/:language?`
   | `/deepseek/news`
   | `/dehenglaw/:language?/:category?`
   | `/dekudeals/:type`
@@ -1122,6 +1123,8 @@ export type RoutePath =
   | `/f-droid/apprelease/:app`
   | `/f95zone/post/:thread/:postId`
   | `/f95zone/thread/:thread`
+  | `/facebook/group/:id`
+  | `/facebook/page/:id`
   | `/famitsu/category/:category?`
   | `/fanbox/:creator`
   | `/fanfou/favorites/:uid`
@@ -2855,6 +2858,7 @@ export type RoutePath =
   | `/rockstargames/socialclub/events/:game?`
   | `/rockthejvm/articles`
   | `/rodong/news/:language?`
+  | `/romielf/news/:tagId?`
   | `/routledge/:bookName/book-series/:bookId`
   | `/rsc/journal/:id/:category?`
   | `/rss3/:account/:network?/:tag?`
@@ -3077,7 +3081,7 @@ export type RoutePath =
   | `/smzdm/article/:uid`
   | `/smzdm/baoliao/:uid`
   | `/smzdm/haowen/:day?`
-  | `/smzdm/haowen/fenlei/:name/:sort?`
+  | `/smzdm/haowen/fenlei/:name`
   | `/smzdm/keyword/:keyword`
   | `/smzdm/product/:id`
   | `/smzdm/ranking/:rank_type/:rank_id/:hour`
@@ -3637,6 +3641,8 @@ export type RoutePath =
   | `/wuzhongmuseum/exhibition/:type?`
   | `/wyzxwk/article/:id?`
   | `/wzbc/:type?`
+  | `/wzbwg/news/:type`
+  | `/wzbwg/zhanlan/specialexhibition`
   | `/wzu/news/:type?`
   | `/x-mol/news/:tag?`
   | `/x-mol/paper/:type/:magazine`
@@ -3690,7 +3696,7 @@ export type RoutePath =
   | `/xkb/:channel`
   | `/xmanhua/:uid`
   | `/xmind/mindmap/:lang?`
-  | `/xmlcom/`
+  | `/xml/`
   | `/xmnn/epaper/:id?`
   | `/xmnn/news/:category{.+}?`
   | `/xmu/aero/:type`
