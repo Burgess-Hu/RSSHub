@@ -66,6 +66,9 @@
   "/8264/list/:id?": [
     "nczitzk"
   ],
+  "/10086/b2b/:type?": [
+    "TonyRL"
+  ],
   "/12306/:date/:from/:to/:type?": [
     "Fatpandac"
   ],
@@ -190,6 +193,9 @@
   ],
   "/cowlevel/element/:id": [
     "hoilc"
+  ],
+  "/datalekt/incidents": [
+    "shoeper"
   ],
   "/daum/potplayer/:lang?": [
     "nczitzk"
@@ -1234,12 +1240,6 @@
     "KTachibanaM",
     "AiraNadih"
   ],
-  "/facebook/group/:id": [
-    "TonyRL"
-  ],
-  "/facebook/page/:id": [
-    "TonyRL"
-  ],
   "/fediverse/timeline/:account": [
     "DIYgod",
     "pseudoyu"
@@ -1779,6 +1779,18 @@
   ],
   "/discord/search/:guildId/:routeParams": [
     "NekoAria"
+  ],
+  "/facebook/group/:id": [
+    "TonyRL"
+  ],
+  "/facebook/page/:id": [
+    "TonyRL"
+  ],
+  "/facebook/photos/:id": [
+    "TonyRL"
+  ],
+  "/facebook/reels/:id": [
+    "TonyRL"
   ],
   "/fanbox/:creator": [
     "KarasuShin",
@@ -3305,6 +3317,9 @@
   ],
   "/cline/blog": [
     "yeshan333"
+  ],
+  "/cloudflare/blog": [
+    "ljh12138164"
   ],
   "/cloudnative/blog": [
     "aneasystone"
@@ -11485,6 +11500,18 @@
   ],
   "/line/today/:edition?/:tab?": [
     "nczitzk"
+  ],
+  "/lingowhale/channel/:id": [
+    "TonyRL"
+  ],
+  "/lingowhale/hot/:type?": [
+    "TonyRL"
+  ],
+  "/lingowhale/search/:keyword/:type?": [
+    "TonyRL"
+  ],
+  "/lingowhale/topic/:id": [
+    "TonyRL"
   ],
   "/linkedin/company/:company_id/posts": [
     "saifazmi"

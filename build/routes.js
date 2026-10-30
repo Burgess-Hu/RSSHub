@@ -735,6 +735,60 @@ export default {
     "url": "8264.com",
     "lang": "zh-CN"
   },
+  "10086": {
+    "routes": {
+      "/b2b/:type?": {
+        "path": "/b2b/:type?",
+        "categories": [
+          "other"
+        ],
+        "example": "/10086/b2b/PROCUREMENT",
+        "parameters": {
+          "type": {
+            "description": "公告类型",
+            "options": [
+              {
+                "value": "PROCUREMENT",
+                "label": "招标采购公告"
+              },
+              {
+                "value": "PURCHASE_SERVICE",
+                "label": "采购服务"
+              },
+              {
+                "value": "VENDOR",
+                "label": "供应商公告"
+              },
+              {
+                "value": "IMPORTANT_NOTICE",
+                "label": "系统通知"
+              }
+            ],
+            "default": "PROCUREMENT"
+          }
+        },
+        "radar": [
+          {
+            "source": [
+              "b2b.10086.cn/"
+            ],
+            "target": "/b2b"
+          }
+        ],
+        "name": "采购与招标网公告",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "url": "b2b.10086.cn",
+        "location": "b2b.ts",
+        "module": () => import('@/routes/10086/b2b.ts')
+      }
+    },
+    "apiRoutes": {},
+    "name": "中国移动",
+    "url": "10086.cn",
+    "lang": "zh-CN"
+  },
   "12306": {
     "routes": {
       "/:date/:from/:to/:type?": {
@@ -2238,6 +2292,36 @@ export default {
       "game"
     ],
     "lang": "zh-CN"
+  },
+  "datalekt": {
+    "routes": {
+      "/incidents": {
+        "path": "/incidents",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/datalekt/incidents",
+        "name": "Incidents",
+        "maintainers": [
+          "shoeper"
+        ],
+        "description": "Latest cyber incidents listed by Datalekt",
+        "radar": [
+          {
+            "source": [
+              "datalekt.nl/incidenten/"
+            ],
+            "target": "/incidents"
+          }
+        ],
+        "location": "incidents.ts",
+        "module": () => import('@/routes/datalekt/incidents.ts')
+      }
+    },
+    "apiRoutes": {},
+    "name": "Datalekt",
+    "url": "datalekt.nl",
+    "description": "Cyberincidenten in Nederland"
   },
   "daum": {
     "name": "daum",
@@ -14524,85 +14608,6 @@ export default {
     "name": "EVERIA.CLUB",
     "url": "everia.club"
   },
-  "facebook": {
-    "routes": {
-      "/group/:id": {
-        "path": "/group/:id",
-        "categories": [
-          "social-media"
-        ],
-        "example": "/facebook/group/613870175328566",
-        "parameters": {
-          "id": "Group ID or group username"
-        },
-        "features": {
-          "requireConfig": [
-            {
-              "name": "FACEBOOK_COOKIE",
-              "optional": true,
-              "description": "Facebook cookie, only `c_user` and `xs` are required. Set this if you see `Rate limit exceeded`."
-            }
-          ],
-          "antiCrawler": true
-        },
-        "radar": [
-          {
-            "source": [
-              "www.facebook.com/groups/:id"
-            ]
-          }
-        ],
-        "name": "Group",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "url": "www.facebook.com",
-        "location": "group.ts",
-        "module": () => import('@/routes/facebook/group.ts')
-      },
-      "/page/:id": {
-        "path": "/page/:id",
-        "categories": [
-          "social-media"
-        ],
-        "example": "/facebook/page/NASA",
-        "parameters": {
-          "id": "Page or profile username, or numeric ID"
-        },
-        "features": {
-          "requireConfig": [
-            {
-              "name": "FACEBOOK_COOKIE",
-              "optional": true,
-              "description": "Facebook cookie, only `c_user` and `xs` are required. Set this if you see `Rate limit exceeded`."
-            }
-          ],
-          "antiCrawler": true
-        },
-        "radar": [
-          {
-            "source": [
-              "www.facebook.com/:id",
-              "www.facebook.com/people/:name/:id"
-            ],
-            "target": "/page/:id"
-          }
-        ],
-        "name": "Page / Profile",
-        "maintainers": [
-          "TonyRL"
-        ],
-        "description": "Works for pages and public personal profiles. Posts behind a login wall require `FACEBOOK_COOKIE`.",
-        "url": "www.facebook.com",
-        "location": "page.ts",
-        "module": () => import('@/routes/facebook/page.ts')
-      }
-    },
-    "apiRoutes": {},
-    "name": "Facebook",
-    "url": "www.facebook.com",
-    "lang": "en"
-  },
   "fediverse": {
     "routes": {
       "/timeline/:account": {
@@ -20910,6 +20915,156 @@ export default {
     "apiRoutes": {},
     "name": "Discord",
     "url": "discord.com",
+    "lang": "en"
+  },
+  "facebook": {
+    "routes": {
+      "/group/:id": {
+        "path": "/group/:id",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/facebook/group/613870175328566",
+        "parameters": {
+          "id": "Group ID or group username"
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "FACEBOOK_COOKIE",
+              "optional": true,
+              "description": "Facebook cookie, only `c_user` and `xs` are required. Set this if you see `Rate limit exceeded`."
+            }
+          ],
+          "antiCrawler": true
+        },
+        "radar": [
+          {
+            "source": [
+              "www.facebook.com/groups/:id"
+            ]
+          }
+        ],
+        "name": "Group",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "url": "www.facebook.com",
+        "location": "group.ts",
+        "module": () => import('@/routes/facebook/group.ts')
+      },
+      "/page/:id": {
+        "path": "/page/:id",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/facebook/page/NASA",
+        "parameters": {
+          "id": "Page or profile username, or numeric ID"
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "FACEBOOK_COOKIE",
+              "optional": true,
+              "description": "Facebook cookie, only `c_user` and `xs` are required. Set this if you see `Rate limit exceeded`."
+            }
+          ],
+          "antiCrawler": true
+        },
+        "radar": [
+          {
+            "source": [
+              "www.facebook.com/:id",
+              "www.facebook.com/people/:name/:id"
+            ],
+            "target": "/page/:id"
+          }
+        ],
+        "name": "Page / Profile",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "description": "Works for pages and public personal profiles. Posts behind a login wall require `FACEBOOK_COOKIE`.",
+        "url": "www.facebook.com",
+        "location": "page.ts",
+        "module": () => import('@/routes/facebook/page.ts')
+      },
+      "/photos/:id": {
+        "path": "/photos/:id",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/facebook/photos/NASA",
+        "parameters": {
+          "id": "Page or profile username"
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "FACEBOOK_COOKIE",
+              "optional": true,
+              "description": "Facebook cookie, only `c_user` and `xs` are required. Set this if you see `Rate limit exceeded`."
+            }
+          ],
+          "antiCrawler": true
+        },
+        "radar": [
+          {
+            "source": [
+              "www.facebook.com/:id/photos",
+              "www.facebook.com/:id/photos_by"
+            ],
+            "target": "/photos/:id"
+          }
+        ],
+        "name": "Photos",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "url": "www.facebook.com",
+        "location": "photos.ts",
+        "module": () => import('@/routes/facebook/photos.ts')
+      },
+      "/reels/:id": {
+        "path": "/reels/:id",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/facebook/reels/Microsoft",
+        "parameters": {
+          "id": "Page or profile username"
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "FACEBOOK_COOKIE",
+              "optional": true,
+              "description": "Facebook cookie, only `c_user` and `xs` are required. Set this if you see `Rate limit exceeded`."
+            }
+          ],
+          "antiCrawler": true
+        },
+        "radar": [
+          {
+            "source": [
+              "www.facebook.com/:id/reels"
+            ],
+            "target": "/reels/:id"
+          }
+        ],
+        "name": "Reels",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "url": "www.facebook.com",
+        "location": "reels.ts",
+        "module": () => import('@/routes/facebook/reels.ts')
+      }
+    },
+    "apiRoutes": {},
+    "name": "Facebook",
+    "url": "www.facebook.com",
     "lang": "en"
   },
   "fanbox": {
@@ -46011,6 +46166,50 @@ export default {
       }
     },
     "apiRoutes": {}
+  },
+  "cloudflare": {
+    "routes": {
+      "/blog": {
+        "path": "/blog",
+        "name": "Blog",
+        "url": "blog.cloudflare.com",
+        "example": "/cloudflare/blog",
+        "categories": [
+          "programming"
+        ],
+        "maintainers": [
+          "ljh12138164"
+        ],
+        "description": "Uses the [official RSS feed](https://blog.cloudflare.com/rss/) for article metadata and fetches full articles from [Cloudflare Blog](https://blog.cloudflare.com/), including inline images, code blocks, and copyable prompts.",
+        "zh": {
+          "description": "来源：[Cloudflare Blog](https://blog.cloudflare.com/)。使用[官方 RSS](https://blog.cloudflare.com/rss/)获取文章列表、作者、日期和标签，再抓取并缓存网页正文，补齐图片、代码块和可复制的提示词。"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "blog.cloudflare.com"
+            ],
+            "target": "/blog"
+          }
+        ],
+        "view": 0,
+        "location": "blog.ts",
+        "module": () => import('@/routes/cloudflare/blog.ts')
+      }
+    },
+    "apiRoutes": {},
+    "name": "Cloudflare",
+    "url": "blog.cloudflare.com",
+    "lang": "en"
   },
   "cloudnative": {
     "routes": {
@@ -116391,7 +116590,7 @@ export default {
           "synchrone",
           "pseudoyu"
         ],
-        "description": "::: tip\nDue to Telegram restrictions, some channels involving pornography, copyright, and politics cannot be subscribed. You can confirm by visiting `https://t.me/s/:username`, it's recommended to deploy your own instance with telegram api configs (create your telegram application via `https://core.telegram.org/api/obtaining_api_id`, run this command `node ./lib/routes/telegram/scripts/get-telegram-session.mjs` to get `TELEGRAM_SESSION` and set it as Environment Variable).\nMTProto connections can use a SOCKS4/5 `PROXY_URI` (for example, `socks5://127.0.0.1:1080`) or the dedicated `TELEGRAM_PROXY_HOST`, `TELEGRAM_PROXY_PORT`, and `TELEGRAM_PROXY_SECRET` MTProxy settings, which take precedence. HTTP proxies only apply to the public web feed; use a SOCKS or MTProxy endpoint for authenticated MTProto feeds.\nWhen MTProto fails or gives no response within `REQUEST_TIMEOUT`, the route falls back to the public web feed. Cloudflare Workers deployments always use the public web feed.\n\nWhen a reverse proxy removes a public URL prefix (for example, `/rss`), set its `X-Forwarded-Prefix` request header to that prefix so Telegram media links include it. Access-control `key` and `code` parameters are preserved in these media links.\n:::",
+        "description": "::: tip\nDue to Telegram restrictions, some channels involving pornography, copyright, and politics cannot be subscribed. You can confirm by visiting `https://t.me/s/:username`, it's recommended to deploy your own instance with telegram api configs (create your telegram application via `https://core.telegram.org/api/obtaining_api_id`, run this command `node ./lib/routes/telegram/scripts/get-telegram-session.mjs` to get `TELEGRAM_SESSION` and set it as Environment Variable).\nMTProto connections can use a SOCKS4/5 `PROXY_URI` (for example, `socks5://127.0.0.1:1080`) or the dedicated `TELEGRAM_PROXY_HOST`, `TELEGRAM_PROXY_PORT`, and `TELEGRAM_PROXY_SECRET` MTProxy settings, which take precedence. HTTP proxies only apply to the public web feed; use a SOCKS or MTProxy endpoint for authenticated MTProto feeds.\nWhen MTProto hits a flood wait or gives no response within `REQUEST_TIMEOUT`, the route falls back to the public web feed. Other MTProto errors fail the feed. Cloudflare Workers deployments always use the public web feed.\n\nWhen a reverse proxy removes a public URL prefix (for example, `/rss`), set its `X-Forwarded-Prefix` request header to that prefix so Telegram media links include it. Access-control `key` and `code` parameters are preserved in these media links.\n:::",
         "location": "channel.ts",
         "module": () => import('@/routes/telegram/channel.ts')
       }
@@ -155942,6 +156141,145 @@ export default {
     "name": "LINE",
     "url": "today.line.me",
     "lang": "en"
+  },
+  "lingowhale": {
+    "routes": {
+      "/channel/:id": {
+        "path": "/channel/:id",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/lingowhale/channel/67cc08a19a4297b6148b297e",
+        "parameters": {
+          "id": "Channel ID, found in the `channel_id` query of the channel page URL"
+        },
+        "radar": [
+          {
+            "source": [
+              "lingowhale.com/channels"
+            ]
+          }
+        ],
+        "name": "频道",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "url": "lingowhale.com",
+        "location": "channel.ts",
+        "module": () => import('@/routes/lingowhale/channel.ts')
+      },
+      "/hot/:type?": {
+        "path": "/hot/:type?",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/lingowhale/hot/2",
+        "parameters": {
+          "type": {
+            "description": "Hot list type",
+            "options": [
+              {
+                "value": "1",
+                "label": "热门频道"
+              },
+              {
+                "value": "2",
+                "label": "热门话题"
+              },
+              {
+                "value": "3",
+                "label": "热门文章"
+              }
+            ],
+            "default": "2"
+          }
+        },
+        "radar": [
+          {
+            "source": [
+              "lingowhale.com/topics"
+            ]
+          }
+        ],
+        "name": "热门",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "url": "lingowhale.com",
+        "location": "hot.ts",
+        "module": () => import('@/routes/lingowhale/hot.ts')
+      },
+      "/search/:keyword/:type?": {
+        "path": "/search/:keyword/:type?",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/lingowhale/search/F1",
+        "parameters": {
+          "keyword": "Search keyword",
+          "type": {
+            "description": "Search type",
+            "options": [
+              {
+                "value": "1",
+                "label": "频道"
+              },
+              {
+                "value": "2",
+                "label": "话题"
+              },
+              {
+                "value": "3",
+                "label": "文章"
+              }
+            ],
+            "default": "1"
+          }
+        },
+        "radar": [
+          {
+            "source": [
+              "lingowhale.com/channels"
+            ]
+          }
+        ],
+        "name": "搜索",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "url": "lingowhale.com",
+        "location": "search.ts",
+        "module": () => import('@/routes/lingowhale/search.ts')
+      },
+      "/topic/:id": {
+        "path": "/topic/:id",
+        "categories": [
+          "new-media"
+        ],
+        "example": "/lingowhale/topic/6ace33a60c047819650365b1",
+        "parameters": {
+          "id": "Topic ID, found in the `topic_id` query of the topic page URL"
+        },
+        "radar": [
+          {
+            "source": [
+              "lingowhale.com/topics"
+            ]
+          }
+        ],
+        "name": "话题",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "url": "lingowhale.com",
+        "location": "topic.ts",
+        "module": () => import('@/routes/lingowhale/topic.ts')
+      }
+    },
+    "apiRoutes": {},
+    "name": "语鲸 LingoWhale",
+    "url": "lingowhale.com",
+    "lang": "zh-CN"
   },
   "linkedin": {
     "routes": {

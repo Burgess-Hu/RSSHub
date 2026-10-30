@@ -7,6 +7,7 @@ export type RoutePath =
   | `/0x80/blog`
   | `/0xxx/:filter?`
   | `/10000link/info/:category?/:id?`
+  | `/10086/b2b/:type?`
   | `/10jqka/realtimenews/:tag?`
   | `/121/weatherLive`
   | `/12306/:date/:from/:to/:type?`
@@ -668,6 +669,7 @@ export type RoutePath =
   | `/claude/code/changelog`
   | `/clickme/:site/:grouping/:name`
   | `/cline/blog`
+  | `/cloudflare/blog`
   | `/cloudflarestatus/`
   | `/cloudnative/blog`
   | `/cls/depth/:category?`
@@ -857,6 +859,7 @@ export type RoutePath =
   | `/dapenti/tugua`
   | `/darwinawards/`
   | `/dataguidance/news`
+  | `/datalekt/incidents`
   | `/daum/potplayer/:lang?`
   | `/daxiaamu/home`
   | `/dayanzai/:category/:fulltext?`
@@ -1139,6 +1142,8 @@ export type RoutePath =
   | `/f95zone/thread/:thread`
   | `/facebook/group/:id`
   | `/facebook/page/:id`
+  | `/facebook/photos/:id`
+  | `/facebook/reels/:id`
   | `/famitsu/category/:category?`
   | `/fanbox/:creator`
   | `/fanfou/favorites/:uid`
@@ -2121,6 +2126,10 @@ export type RoutePath =
   | `/line/today/:edition?/:tab?`
   | `/line/today/:edition/publisher/:id`
   | `/lineageos/changes`
+  | `/lingowhale/channel/:id`
+  | `/lingowhale/hot/:type?`
+  | `/lingowhale/search/:keyword/:type?`
+  | `/lingowhale/topic/:id`
   | `/link3/events`
   | `/link3/profile/:handle`
   | `/linkedin/company/:company_id/posts`

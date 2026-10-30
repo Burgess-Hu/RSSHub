@@ -145,6 +145,19 @@
       }
     ]
   },
+  "10086.cn": {
+    "_name": "中国移动",
+    "b2b": [
+      {
+        "title": "采购与招标网公告",
+        "docs": "https://docs.rsshub.app/routes/10086",
+        "source": [
+          "/"
+        ],
+        "target": "/10086/b2b"
+      }
+    ]
+  },
   "12306.cn": {
     "_name": "12306",
     "www": [
@@ -541,6 +554,19 @@
           "/element/:id/article"
         ],
         "target": "/cowlevel/element/:id"
+      }
+    ]
+  },
+  "datalekt.nl": {
+    "_name": "Datalekt",
+    ".": [
+      {
+        "title": "Incidents",
+        "docs": "https://docs.rsshub.app/routes/datalekt",
+        "source": [
+          "/incidenten/"
+        ],
+        "target": "/datalekt/incidents"
       }
     ]
   },
@@ -3897,28 +3923,6 @@
       }
     ]
   },
-  "facebook.com": {
-    "_name": "Facebook",
-    "www": [
-      {
-        "title": "Group",
-        "docs": "https://docs.rsshub.app/routes/facebook",
-        "source": [
-          "/groups/:id"
-        ],
-        "target": "/facebook/group/:id"
-      },
-      {
-        "title": "Page / Profile",
-        "docs": "https://docs.rsshub.app/routes/facebook",
-        "source": [
-          "/:id",
-          "/people/:name/:id"
-        ],
-        "target": "/facebook/page/:id"
-      }
-    ]
-  },
   "fffdm.com": {
     "_name": "风之动漫",
     "www": [
@@ -5550,6 +5554,45 @@
           "/quest-home"
         ],
         "target": "/discord/quests"
+      }
+    ]
+  },
+  "facebook.com": {
+    "_name": "Facebook",
+    "www": [
+      {
+        "title": "Group",
+        "docs": "https://docs.rsshub.app/routes/facebook",
+        "source": [
+          "/groups/:id"
+        ],
+        "target": "/facebook/group/:id"
+      },
+      {
+        "title": "Page / Profile",
+        "docs": "https://docs.rsshub.app/routes/facebook",
+        "source": [
+          "/:id",
+          "/people/:name/:id"
+        ],
+        "target": "/facebook/page/:id"
+      },
+      {
+        "title": "Photos",
+        "docs": "https://docs.rsshub.app/routes/facebook",
+        "source": [
+          "/:id/photos",
+          "/:id/photos_by"
+        ],
+        "target": "/facebook/photos/:id"
+      },
+      {
+        "title": "Reels",
+        "docs": "https://docs.rsshub.app/routes/facebook",
+        "source": [
+          "/:id/reels"
+        ],
+        "target": "/facebook/reels/:id"
       }
     ]
   },
@@ -16709,6 +16752,19 @@
           "/blog"
         ],
         "target": "/cline/blog"
+      }
+    ]
+  },
+  "cloudflare.com": {
+    "_name": "Cloudflare",
+    "blog": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/cloudflare",
+        "source": [
+          "/"
+        ],
+        "target": "/cloudflare/blog"
       }
     ]
   },
@@ -59140,6 +59196,43 @@
           "/"
         ],
         "target": "/line/today/:edition?/:tab?"
+      }
+    ]
+  },
+  "lingowhale.com": {
+    "_name": "语鲸 LingoWhale",
+    ".": [
+      {
+        "title": "频道",
+        "docs": "https://docs.rsshub.app/routes/lingowhale",
+        "source": [
+          "/channels"
+        ],
+        "target": "/lingowhale/channel/:id"
+      },
+      {
+        "title": "热门",
+        "docs": "https://docs.rsshub.app/routes/lingowhale",
+        "source": [
+          "/topics"
+        ],
+        "target": "/lingowhale/hot/:type?"
+      },
+      {
+        "title": "搜索",
+        "docs": "https://docs.rsshub.app/routes/lingowhale",
+        "source": [
+          "/channels"
+        ],
+        "target": "/lingowhale/search/:keyword/:type?"
+      },
+      {
+        "title": "话题",
+        "docs": "https://docs.rsshub.app/routes/lingowhale",
+        "source": [
+          "/topics"
+        ],
+        "target": "/lingowhale/topic/:id"
       }
     ]
   },
