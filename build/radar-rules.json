@@ -282,20 +282,6 @@
       }
     ]
   },
-  "bbcnewslabs.co.uk": {
-    "_name": "BBC News Labs",
-    ".": [
-      {
-        "title": "News",
-        "docs": "https://docs.rsshub.app/routes/bbcnewslabs",
-        "source": [
-          "/",
-          "/rdnewslabs/news/"
-        ],
-        "target": "/bbcnewslabs/news"
-      }
-    ]
-  },
   "binance.com": {
     "_name": "Binance",
     "www": [
@@ -4432,20 +4418,6 @@
           "/Profile/:uid/:handle/Store"
         ],
         "target": "/manyvids/profile/vids/:uid"
-      }
-    ]
-  },
-  "mymusicfive.com": {
-    "_name": "mymusic5 (MyMusicSheet)",
-    ".": [
-      {
-        "title": "User Sheets",
-        "docs": "https://docs.rsshub.app/routes/mymusicsheet",
-        "source": [
-          "/:username/*",
-          "/:username"
-        ],
-        "target": "/mymusicsheet/user/sheets/:username"
       }
     ]
   },
@@ -12140,6 +12112,53 @@
           "/:region/networking-iot-servers/:productLine/:series/:model"
         ],
         "target": "/asus/bios/:model"
+      },
+      {
+        "title": "Driver",
+        "docs": "https://docs.rsshub.app/routes/asus",
+        "source": [
+          "/displays-desktops/:productLine/:series/:model",
+          "/laptops/:productLine/:series/:model",
+          "/motherboards-components/:productLine/:series/:model",
+          "/networking-iot-servers/:productLine/:series/:model",
+          "/:region/displays-desktops/:productLine/:series/:model",
+          "/:region/laptops/:productLine/:series/:model",
+          "/:region/motherboards-components/:productLine/:series/:model",
+          "/:region/networking-iot-servers/:productLine/:series/:model"
+        ],
+        "target": "/asus/driver/:model"
+      }
+    ],
+    "rog": [
+      {
+        "title": "BIOS",
+        "docs": "https://docs.rsshub.app/routes/asus",
+        "source": [
+          "/laptops/:series/:model/*",
+          "/motherboards/:series/:model/*",
+          "/gaming-handhelds/:series/:model/*",
+          "/desktops/:series/:model/*",
+          "/:region/laptops/:series/:model/*",
+          "/:region/motherboards/:series/:model/*",
+          "/:region/gaming-handhelds/:series/:model/*",
+          "/:region/desktops/:series/:model/*"
+        ],
+        "target": "/asus/bios/:model"
+      },
+      {
+        "title": "Driver",
+        "docs": "https://docs.rsshub.app/routes/asus",
+        "source": [
+          "/laptops/:series/:model/*",
+          "/motherboards/:series/:model/*",
+          "/gaming-handhelds/:series/:model/*",
+          "/desktops/:series/:model/*",
+          "/:region/laptops/:series/:model/*",
+          "/:region/motherboards/:series/:model/*",
+          "/:region/gaming-handhelds/:series/:model/*",
+          "/:region/desktops/:series/:model/*"
+        ],
+        "target": "/asus/driver/:model"
       }
     ],
     ".": [
@@ -24227,6 +24246,19 @@
       }
     ]
   },
+  "groq.com": {
+    "_name": "Groq",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/groq",
+        "source": [
+          "/blog"
+        ],
+        "target": "/groq/blog"
+      }
+    ]
+  },
   "gs.com": {
     "_name": "Goldman Sachs",
     "developer": [
@@ -32029,6 +32061,27 @@
       }
     ]
   },
+  "lvshunmuseum.cn": {
+    "_name": "Lvshun Museum",
+    ".": [
+      {
+        "title": "Exhibitions",
+        "docs": "https://docs.rsshub.app/routes/lvshunmuseum",
+        "source": [
+          "/Exhibition/"
+        ],
+        "target": "/lvshunmuseum/exhibition"
+      },
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/lvshunmuseum",
+        "source": [
+          "/news/"
+        ],
+        "target": "/lvshunmuseum/news"
+      }
+    ]
+  },
   "m-78.jp": {
     "_name": "円谷ステーション",
     ".": [
@@ -34875,6 +34928,20 @@
       }
     ]
   },
+  "mistral.ai": {
+    "_name": "Mistral AI",
+    ".": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/mistral",
+        "source": [
+          "/news",
+          "/news/rss"
+        ],
+        "target": "/mistral/news"
+      }
+    ]
+  },
   "mit.edu": {
     "_name": "Massachusetts Institute of Technology (MIT)",
     "scratch": [
@@ -35968,7 +36035,7 @@
         "source": [
           "/"
         ],
-        "target": "/ndss-symposium/ndss"
+        "target": "/ndss-symposium/ndss/:abstract?"
       }
     ]
   },
@@ -41562,59 +41629,6 @@
       }
     ]
   },
-  "psyche.co": {
-    "_name": "Psyche",
-    ".": [
-      {
-        "title": "Topics",
-        "docs": "https://docs.rsshub.app/routes/psyche",
-        "source": [
-          "/therapeia"
-        ],
-        "target": "/psyche/topic/therapeia"
-      },
-      {
-        "title": "Topics",
-        "docs": "https://docs.rsshub.app/routes/psyche",
-        "source": [
-          "/eudaimonia"
-        ],
-        "target": "/psyche/topic/eudaimonia"
-      },
-      {
-        "title": "Topics",
-        "docs": "https://docs.rsshub.app/routes/psyche",
-        "source": [
-          "/poiesis"
-        ],
-        "target": "/psyche/topic/poiesis"
-      },
-      {
-        "title": "Types",
-        "docs": "https://docs.rsshub.app/routes/psyche",
-        "source": [
-          "/ideas"
-        ],
-        "target": "/psyche/type/ideas"
-      },
-      {
-        "title": "Types",
-        "docs": "https://docs.rsshub.app/routes/psyche",
-        "source": [
-          "/guides"
-        ],
-        "target": "/psyche/type/guides"
-      },
-      {
-        "title": "Types",
-        "docs": "https://docs.rsshub.app/routes/psyche",
-        "source": [
-          "/films"
-        ],
-        "target": "/psyche/type/films"
-      }
-    ]
-  },
   "publico.es": {
     "_name": "Público",
     ".": [
@@ -44054,7 +44068,7 @@
           "/ccs.html",
           "/"
         ],
-        "target": "/sigsac/ccs"
+        "target": "/sigsac/ccs/:year?"
       }
     ]
   },
@@ -44434,7 +44448,7 @@
         "title": "最新规则",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/latest/"
+          "/lawandrules/sselawsrules2025/latest/"
         ],
         "target": "/sse/sselawsrules/latest"
       },
@@ -44442,7 +44456,7 @@
         "title": "章程",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/article/"
+          "/lawandrules/sselawsrules2025/article/"
         ],
         "target": "/sse/sselawsrules/article"
       },
@@ -44450,7 +44464,7 @@
         "title": "首发",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/stocks/review/firstepisode/"
+          "/lawandrules/sselawsrules2025/stocks/review/firstepisode/"
         ],
         "target": "/sse/sselawsrules/stocks/review/firstepisode"
       },
@@ -44458,7 +44472,7 @@
         "title": "再融资",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/stocks/review/refinancing/"
+          "/lawandrules/sselawsrules2025/stocks/review/refinancing/"
         ],
         "target": "/sse/sselawsrules/stocks/review/refinancing"
       },
@@ -44466,7 +44480,7 @@
         "title": "重组",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/stocks/review/recombination/"
+          "/lawandrules/sselawsrules2025/stocks/review/recombination/"
         ],
         "target": "/sse/sselawsrules/stocks/review/recombination"
       },
@@ -44474,7 +44488,7 @@
         "title": "转板",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/stocks/review/flap/"
+          "/lawandrules/sselawsrules2025/stocks/review/flap/"
         ],
         "target": "/sse/sselawsrules/stocks/review/flap"
       },
@@ -44482,7 +44496,7 @@
         "title": "发行承销",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/stocks/issue/"
+          "/lawandrules/sselawsrules2025/stocks/issue/"
         ],
         "target": "/sse/sselawsrules/stocks/issue"
       },
@@ -44490,7 +44504,7 @@
         "title": "主板上市（挂牌）",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/stocks/mainipo/"
+          "/lawandrules/sselawsrules2025/stocks/mainipo/"
         ],
         "target": "/sse/sselawsrules/stocks/mainipo"
       },
@@ -44498,7 +44512,7 @@
         "title": "科创板上市（挂牌）",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/stocks/staripo/"
+          "/lawandrules/sselawsrules2025/stocks/staripo/"
         ],
         "target": "/sse/sselawsrules/stocks/staripo"
       },
@@ -44506,7 +44520,7 @@
         "title": "股票交易",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/stocks/exchange/"
+          "/lawandrules/sselawsrules2025/stocks/exchange/"
         ],
         "target": "/sse/sselawsrules/stocks/exchange"
       },
@@ -44514,7 +44528,7 @@
         "title": "试点创新企业",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/stocks/innovative/"
+          "/lawandrules/sselawsrules2025/stocks/innovative/"
         ],
         "target": "/sse/sselawsrules/stocks/innovative"
       },
@@ -44522,7 +44536,7 @@
         "title": "股权分置改革",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/stocks/reform/"
+          "/lawandrules/sselawsrules2025/stocks/reform/"
         ],
         "target": "/sse/sselawsrules/stocks/reform"
       },
@@ -44530,7 +44544,7 @@
         "title": "发行上市审核",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/bond/review/"
+          "/lawandrules/sselawsrules2025/bond/review/"
         ],
         "target": "/sse/sselawsrules/bond/review"
       },
@@ -44538,7 +44552,7 @@
         "title": "发行承销",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/bond/issue/"
+          "/lawandrules/sselawsrules2025/bond/issue/"
         ],
         "target": "/sse/sselawsrules/bond/issue"
       },
@@ -44546,7 +44560,7 @@
         "title": "公司债券上市（挂牌）",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/bond/listing/corporatebond/"
+          "/lawandrules/sselawsrules2025/bond/listing/corporatebond/"
         ],
         "target": "/sse/sselawsrules/bond/listing/corporatebond"
       },
@@ -44554,7 +44568,7 @@
         "title": "资产支持证券上市（挂牌）",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/bond/listing/assets/"
+          "/lawandrules/sselawsrules2025/bond/listing/assets/"
         ],
         "target": "/sse/sselawsrules/bond/listing/assets"
       },
@@ -44562,7 +44576,7 @@
         "title": "债券交易通用",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/bond/trading/currency/"
+          "/lawandrules/sselawsrules2025/bond/trading/currency/"
         ],
         "target": "/sse/sselawsrules/bond/trading/currency"
       },
@@ -44570,7 +44584,7 @@
         "title": "国债预发行",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/bond/trading/tbondp/"
+          "/lawandrules/sselawsrules2025/bond/trading/tbondp/"
         ],
         "target": "/sse/sselawsrules/bond/trading/tbondp"
       },
@@ -44578,7 +44592,7 @@
         "title": "债券质押式三方回购",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/bond/trading/tripartyrepo/"
+          "/lawandrules/sselawsrules2025/bond/trading/tripartyrepo/"
         ],
         "target": "/sse/sselawsrules/bond/trading/tripartyrepo"
       },
@@ -44586,7 +44600,7 @@
         "title": "债券质押式协议回购",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/bond/trading/repurchase/"
+          "/lawandrules/sselawsrules2025/bond/trading/repurchase/"
         ],
         "target": "/sse/sselawsrules/bond/trading/repurchase"
       },
@@ -44594,7 +44608,7 @@
         "title": "国债买断式回购交易",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/bond/trading/outrightrepo/"
+          "/lawandrules/sselawsrules2025/bond/trading/outrightrepo/"
         ],
         "target": "/sse/sselawsrules/bond/trading/outrightrepo"
       },
@@ -44602,7 +44616,7 @@
         "title": "信用保护工具",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/bond/trading/cdx/"
+          "/lawandrules/sselawsrules2025/bond/trading/cdx/"
         ],
         "target": "/sse/sselawsrules/bond/trading/cdx"
       },
@@ -44610,7 +44624,7 @@
         "title": "上市公司可转债",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/bond/convertible/"
+          "/lawandrules/sselawsrules2025/bond/convertible/"
         ],
         "target": "/sse/sselawsrules/bond/convertible"
       },
@@ -44618,7 +44632,7 @@
         "title": "基金上市",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/fund/listing/"
+          "/lawandrules/sselawsrules2025/fund/listing/"
         ],
         "target": "/sse/sselawsrules/fund/listing"
       },
@@ -44626,7 +44640,7 @@
         "title": "基金交易",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/fund/trading/"
+          "/lawandrules/sselawsrules2025/fund/trading/"
         ],
         "target": "/sse/sselawsrules/fund/trading"
       },
@@ -44634,7 +44648,7 @@
         "title": "基础设施公募REITs",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/reits/"
+          "/lawandrules/sselawsrules2025/reits/"
         ],
         "target": "/sse/sselawsrules/reits"
       },
@@ -44642,7 +44656,7 @@
         "title": "期权",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/option/"
+          "/lawandrules/sselawsrules2025/option/"
         ],
         "target": "/sse/sselawsrules/option"
       },
@@ -44650,7 +44664,7 @@
         "title": "通用类",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/trade/universal/"
+          "/lawandrules/sselawsrules2025/trade/universal/"
         ],
         "target": "/sse/sselawsrules/trade/universal"
       },
@@ -44658,7 +44672,7 @@
         "title": "融资融券",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/trade/specific/margin/"
+          "/lawandrules/sselawsrules2025/trade/specific/margin/"
         ],
         "target": "/sse/sselawsrules/trade/specific/margin"
       },
@@ -44666,7 +44680,7 @@
         "title": "转融通",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/trade/specific/refinancing/"
+          "/lawandrules/sselawsrules2025/trade/specific/refinancing/"
         ],
         "target": "/sse/sselawsrules/trade/specific/refinancing"
       },
@@ -44674,7 +44688,7 @@
         "title": "质押式回购",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/trade/specific/repo/"
+          "/lawandrules/sselawsrules2025/trade/specific/repo/"
         ],
         "target": "/sse/sselawsrules/trade/specific/repo"
       },
@@ -44682,7 +44696,7 @@
         "title": "质押式报价回购",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/trade/specific/pricerepo/"
+          "/lawandrules/sselawsrules2025/trade/specific/pricerepo/"
         ],
         "target": "/sse/sselawsrules/trade/specific/pricerepo"
       },
@@ -44690,7 +44704,7 @@
         "title": "约定购回",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/trade/specific/promise/"
+          "/lawandrules/sselawsrules2025/trade/specific/promise/"
         ],
         "target": "/sse/sselawsrules/trade/specific/promise"
       },
@@ -44698,7 +44712,7 @@
         "title": "协议转让",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/trade/specific/xyzr/"
+          "/lawandrules/sselawsrules2025/trade/specific/xyzr/"
         ],
         "target": "/sse/sselawsrules/trade/specific/xyzr"
       },
@@ -44706,7 +44720,7 @@
         "title": "其他",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/trade/specific/others/"
+          "/lawandrules/sselawsrules2025/trade/specific/others/"
         ],
         "target": "/sse/sselawsrules/trade/specific/others"
       },
@@ -44714,7 +44728,7 @@
         "title": "沪港通",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/global/hkexsc/"
+          "/lawandrules/sselawsrules2025/global/hkexsc/"
         ],
         "target": "/sse/sselawsrules/global/hkexsc"
       },
@@ -44722,7 +44736,7 @@
         "title": "互联互通存托凭证",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/global/slsc/"
+          "/lawandrules/sselawsrules2025/global/slsc/"
         ],
         "target": "/sse/sselawsrules/global/slsc"
       },
@@ -44730,7 +44744,7 @@
         "title": "会员管理",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/member/personnel/"
+          "/lawandrules/sselawsrules2025/member/personnel/"
         ],
         "target": "/sse/sselawsrules/member/personnel"
       },
@@ -44738,7 +44752,7 @@
         "title": "适当性管理",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/member/adequacy/"
+          "/lawandrules/sselawsrules2025/member/adequacy/"
         ],
         "target": "/sse/sselawsrules/member/adequacy"
       },
@@ -44746,7 +44760,7 @@
         "title": "纪律处分与复核",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/disciplinary/"
+          "/lawandrules/sselawsrules2025/disciplinary/"
         ],
         "target": "/sse/sselawsrules/disciplinary"
       },
@@ -44754,7 +44768,7 @@
         "title": "交易收费",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/charge/"
+          "/lawandrules/sselawsrules2025/charge/"
         ],
         "target": "/sse/sselawsrules/charge"
       },
@@ -44762,7 +44776,7 @@
         "title": "其他业务规则",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/other/"
+          "/lawandrules/sselawsrules2025/other/"
         ],
         "target": "/sse/sselawsrules/other"
       },
@@ -44770,15 +44784,15 @@
         "title": "业务规则废止公告",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sserules/repeal/announcement/"
+          "/lawandrules/sselawsrules2025/repeal/announcement/"
         ],
-        "target": "/sse/sselawsrules//lawandrules/sserules/repeal/announcement"
+        "target": "/sse/sselawsrules/repeal/announcement"
       },
       {
         "title": "已废止规则文本",
         "docs": "https://docs.rsshub.app/routes/sse",
         "source": [
-          "/lawandrules/sselawsrules/repeal/rules/"
+          "/lawandrules/sselawsrules2025/repeal/rules/"
         ],
         "target": "/sse/sselawsrules/repeal/rules"
       }
@@ -52560,26 +52574,6 @@
         ],
         "target": "/aljazeera/arabic/tag/:id"
       }
-    ],
-    "chinese": [
-      {
-        "title": "News",
-        "docs": "https://docs.rsshub.app/routes/aljazeera",
-        "source": [
-          "/:category",
-          "/"
-        ],
-        "target": "/aljazeera/chinese/:category"
-      },
-      {
-        "title": "Tag",
-        "docs": "https://docs.rsshub.app/routes/aljazeera",
-        "source": [
-          "/tag/:id",
-          "/"
-        ],
-        "target": "/aljazeera/chinese/tag/:id"
-      }
     ]
   },
   "amd.com": {
@@ -52719,6 +52713,46 @@
           "/:country/en/c/:gender"
         ],
         "target": "/arcteryx/outlet/:country/:gender"
+      }
+    ]
+  },
+  "arm.com": {
+    "_name": "Arm",
+    "newsroom": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/arm",
+        "source": [
+          "/blog",
+          "/blog/:slug"
+        ],
+        "target": "/arm/blog"
+      },
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/arm",
+        "source": [
+          "/topics/:topic"
+        ],
+        "target": "/arm/blog/:topic"
+      },
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/arm",
+        "source": [
+          "/news",
+          "/news/:slug",
+          "/"
+        ],
+        "target": "/arm/news"
+      },
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/arm",
+        "source": [
+          "/topics/:topic"
+        ],
+        "target": "/arm/news/:topic"
       }
     ]
   },
@@ -61828,115 +61862,6 @@
       }
     ]
   },
-  "twreporter.org": {
-    "_name": "報導者",
-    ".": [
-      {
-        "title": "分類",
-        "docs": "https://docs.rsshub.app/routes/twreporter",
-        "source": [
-          "/:category"
-        ],
-        "target": "/twreporter/category/:category"
-      },
-      {
-        "title": "分類",
-        "docs": "https://docs.rsshub.app/routes/twreporter",
-        "source": [
-          "/categories/world"
-        ],
-        "target": "/twreporter/category/world"
-      },
-      {
-        "title": "分類",
-        "docs": "https://docs.rsshub.app/routes/twreporter",
-        "source": [
-          "/categories/humanrights"
-        ],
-        "target": "/twreporter/category/humanrights"
-      },
-      {
-        "title": "分類",
-        "docs": "https://docs.rsshub.app/routes/twreporter",
-        "source": [
-          "/categories/politics-and-society"
-        ],
-        "target": "/twreporter/category/politics_and_society"
-      },
-      {
-        "title": "分類",
-        "docs": "https://docs.rsshub.app/routes/twreporter",
-        "source": [
-          "/categories/health"
-        ],
-        "target": "/twreporter/category/health"
-      },
-      {
-        "title": "分類",
-        "docs": "https://docs.rsshub.app/routes/twreporter",
-        "source": [
-          "/categories/environment"
-        ],
-        "target": "/twreporter/category/environment"
-      },
-      {
-        "title": "分類",
-        "docs": "https://docs.rsshub.app/routes/twreporter",
-        "source": [
-          "/categories/econ"
-        ],
-        "target": "/twreporter/category/econ"
-      },
-      {
-        "title": "分類",
-        "docs": "https://docs.rsshub.app/routes/twreporter",
-        "source": [
-          "/categories/culture"
-        ],
-        "target": "/twreporter/category/culture"
-      },
-      {
-        "title": "分類",
-        "docs": "https://docs.rsshub.app/routes/twreporter",
-        "source": [
-          "/categories/education"
-        ],
-        "target": "/twreporter/category/education"
-      },
-      {
-        "title": "分類",
-        "docs": "https://docs.rsshub.app/routes/twreporter",
-        "source": [
-          "/categories/podcast"
-        ],
-        "target": "/twreporter/category/podcast"
-      },
-      {
-        "title": "分類",
-        "docs": "https://docs.rsshub.app/routes/twreporter",
-        "source": [
-          "/categories/opinion"
-        ],
-        "target": "/twreporter/category/opinion"
-      },
-      {
-        "title": "分類",
-        "docs": "https://docs.rsshub.app/routes/twreporter",
-        "source": [
-          "/categories/photography"
-        ],
-        "target": "/twreporter/category/photos_section"
-      },
-      {
-        "title": "最新",
-        "docs": "https://docs.rsshub.app/routes/twreporter",
-        "source": [
-          "/"
-        ],
-        "target": "/twreporter/newest"
-      }
-    ]
-  },
   "vocus.cc": {
     "_name": "方格子",
     ".": [
@@ -63240,6 +63165,20 @@
       }
     ]
   },
+  "mymusicfive.com": {
+    "_name": "mymusic5 (MyMusicSheet)",
+    ".": [
+      {
+        "title": "User Sheets",
+        "docs": "https://docs.rsshub.app/routes/mymusicsheet",
+        "source": [
+          "/:username/*",
+          "/:username"
+        ],
+        "target": "/mymusicsheet/user/sheets/:username"
+      }
+    ]
+  },
   "pixiv.net": {
     "_name": "pixiv",
     "www": [
@@ -63298,6 +63237,59 @@
           "/en/users/:id"
         ],
         "target": "/pixiv/user/novels/:id/true"
+      }
+    ]
+  },
+  "psyche.co": {
+    "_name": "Psyche",
+    ".": [
+      {
+        "title": "Topics",
+        "docs": "https://docs.rsshub.app/routes/psyche",
+        "source": [
+          "/therapeia"
+        ],
+        "target": "/psyche/topic/therapeia"
+      },
+      {
+        "title": "Topics",
+        "docs": "https://docs.rsshub.app/routes/psyche",
+        "source": [
+          "/eudaimonia"
+        ],
+        "target": "/psyche/topic/eudaimonia"
+      },
+      {
+        "title": "Topics",
+        "docs": "https://docs.rsshub.app/routes/psyche",
+        "source": [
+          "/poiesis"
+        ],
+        "target": "/psyche/topic/poiesis"
+      },
+      {
+        "title": "Types",
+        "docs": "https://docs.rsshub.app/routes/psyche",
+        "source": [
+          "/ideas"
+        ],
+        "target": "/psyche/type/ideas"
+      },
+      {
+        "title": "Types",
+        "docs": "https://docs.rsshub.app/routes/psyche",
+        "source": [
+          "/guides"
+        ],
+        "target": "/psyche/type/guides"
+      },
+      {
+        "title": "Types",
+        "docs": "https://docs.rsshub.app/routes/psyche",
+        "source": [
+          "/films"
+        ],
+        "target": "/psyche/type/films"
       }
     ]
   },
@@ -63917,6 +63909,115 @@
           "/app/:id"
         ],
         "target": "/taptap/intl/review/:id"
+      }
+    ]
+  },
+  "twreporter.org": {
+    "_name": "報導者",
+    ".": [
+      {
+        "title": "分類",
+        "docs": "https://docs.rsshub.app/routes/twreporter",
+        "source": [
+          "/:category"
+        ],
+        "target": "/twreporter/category/:category"
+      },
+      {
+        "title": "分類",
+        "docs": "https://docs.rsshub.app/routes/twreporter",
+        "source": [
+          "/categories/world"
+        ],
+        "target": "/twreporter/category/world"
+      },
+      {
+        "title": "分類",
+        "docs": "https://docs.rsshub.app/routes/twreporter",
+        "source": [
+          "/categories/humanrights"
+        ],
+        "target": "/twreporter/category/humanrights"
+      },
+      {
+        "title": "分類",
+        "docs": "https://docs.rsshub.app/routes/twreporter",
+        "source": [
+          "/categories/politics-and-society"
+        ],
+        "target": "/twreporter/category/politics_and_society"
+      },
+      {
+        "title": "分類",
+        "docs": "https://docs.rsshub.app/routes/twreporter",
+        "source": [
+          "/categories/health"
+        ],
+        "target": "/twreporter/category/health"
+      },
+      {
+        "title": "分類",
+        "docs": "https://docs.rsshub.app/routes/twreporter",
+        "source": [
+          "/categories/environment"
+        ],
+        "target": "/twreporter/category/environment"
+      },
+      {
+        "title": "分類",
+        "docs": "https://docs.rsshub.app/routes/twreporter",
+        "source": [
+          "/categories/econ"
+        ],
+        "target": "/twreporter/category/econ"
+      },
+      {
+        "title": "分類",
+        "docs": "https://docs.rsshub.app/routes/twreporter",
+        "source": [
+          "/categories/culture"
+        ],
+        "target": "/twreporter/category/culture"
+      },
+      {
+        "title": "分類",
+        "docs": "https://docs.rsshub.app/routes/twreporter",
+        "source": [
+          "/categories/education"
+        ],
+        "target": "/twreporter/category/education"
+      },
+      {
+        "title": "分類",
+        "docs": "https://docs.rsshub.app/routes/twreporter",
+        "source": [
+          "/categories/podcast"
+        ],
+        "target": "/twreporter/category/podcast"
+      },
+      {
+        "title": "分類",
+        "docs": "https://docs.rsshub.app/routes/twreporter",
+        "source": [
+          "/categories/opinion"
+        ],
+        "target": "/twreporter/category/opinion"
+      },
+      {
+        "title": "分類",
+        "docs": "https://docs.rsshub.app/routes/twreporter",
+        "source": [
+          "/categories/photography"
+        ],
+        "target": "/twreporter/category/photos_section"
+      },
+      {
+        "title": "最新",
+        "docs": "https://docs.rsshub.app/routes/twreporter",
+        "source": [
+          "/"
+        ],
+        "target": "/twreporter/newest"
       }
     ]
   },

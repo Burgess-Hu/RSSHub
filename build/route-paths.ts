@@ -257,6 +257,8 @@ export type RoutePath =
   | `/arcteryx/outlet/:country/:gender`
   | `/arcteryx/regear/new-arrivals`
   | `/arena/leaderboard/:category?`
+  | `/arm/blog/:topic?`
+  | `/arm/news/:topic?`
   | `/artstation/:handle`
   | `/arxiv/:query`
   | `/asahi/:genre?/:category?`
@@ -274,6 +276,7 @@ export type RoutePath =
   | `/asml/press-releases`
   | `/asmr-200/works/:order?/:subtitle?/:sort?`
   | `/asus/bios/:model/:lang?`
+  | `/asus/driver/:model/:lang?/:os?`
   | `/asus/gpu-tweak`
   | `/atcoder/contest/:language?/:rated?/:category?/:keyword?`
   | `/atcoder/post/:language?/:keyword?`
@@ -341,7 +344,6 @@ export type RoutePath =
   | `/bbc/sport/:sport`
   | `/bbc/topics/:topic`
   | `/bbc/zhongwen/topics/:topic/:variant?`
-  | `/bbcnewslabs/news`
   | `/bc3ts/post/list/:sort?`
   | `/bcg/search/:params?`
   | `/bdys/:caty?/:type?/:area?/:year?/:order?`
@@ -1584,6 +1586,7 @@ export type RoutePath =
   | `/grist/featured`
   | `/grist/series/:series`
   | `/grist/topic/:topic`
+  | `/groq/blog`
   | `/grubstreet/`
   | `/grupoanimal/estados`
   | `/grupoanimal/politica`
@@ -2219,6 +2222,8 @@ export type RoutePath =
   | `/luogu/user/feed/:uid`
   | `/luolei/`
   | `/luxiangdong/archive`
+  | `/lvshunmuseum/exhibition/:type?`
+  | `/lvshunmuseum/news`
   | `/lvv2/news/:channel/:sort?`
   | `/lvv2/top/:channel/:sort?`
   | `/lwn/alerts/:distributor`
@@ -2348,6 +2353,7 @@ export type RoutePath =
   | `/misskon/posts/:routeParams?`
   | `/misskon/tag/:tag`
   | `/misskon/top/:k`
+  | `/mistral/news`
   | `/mit/csail/news`
   | `/mit/hanlab/blog`
   | `/mit/ocw-top`
@@ -2449,7 +2455,7 @@ export type RoutePath =
   | `/ncpssd/newlist`
   | `/ncu/jwc`
   | `/ncwu/notice`
-  | `/ndss-symposium/ndss`
+  | `/ndss-symposium/ndss/:abstract?`
   | `/neatdownloadmanager/download/:os?`
   | `/neea/jlpt`
   | `/neea/local/:type`
@@ -3139,7 +3145,7 @@ export type RoutePath =
   | `/sicau/jk/:gid/:typeId/:sortType/:token`
   | `/sicau/yan/:category?`
   | `/sicau/zsjy/:category?`
-  | `/sigsac/ccs`
+  | `/sigsac/ccs/:year?`
   | `/simonsfoundation/articles`
   | `/simonsfoundation/recommend`
   | `/simpleinfo/:category?`
